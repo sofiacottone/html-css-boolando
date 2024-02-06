@@ -12,6 +12,20 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+}
+
+/* #endregion  */
+/* #region DEBUG */
+/* .debug .row {
+    border: 1px solid;
+}
+
+.debug .col {
+    border: 1px solid red;
+} */
+
 /* #endregion  */
 /* #region GENERAL */
 body {
@@ -47,6 +61,7 @@ header {
     color: #fff;
     font-size: 14px;
     padding: 10px 0;
+    margin-bottom: 40px;
 }
 
 .header-box {
@@ -67,6 +82,103 @@ header {
 .header-user-actions li {
     display: inline-block;
     padding: 0 4px;
+}
+
+/* #endregion  */
+/* #region MAIN */
+/*----------------------
+    row + column setup
+-----------------------*/
+.row {
+    max-height: 630px;
+    margin-bottom: 20px;
+}
+
+.col {
+    width: calc(100% / 3);
+    max-width: 396px;
+    margin-right: 20px;
+}
+
+.product-box {
+    position: relative;
+}
+
+/*----------------------
+    hover section
+-----------------------*/
+
+.card .card-img-hover {
+    display: none;
+}
+
+.card:hover .card-img-hover {
+    display: block;
+}
+
+.card:hover .card-img-default {
+    display: none;
+}
+
+.add-wishlist:hover {
+    color: var(--red);
+}
+
+/*----------------------
+    tags section
+-----------------------*/
+.card-tags {
+    position: absolute;
+    left: 0;
+    bottom: 50px
+}
+
+.tags {
+    max-width: fit-content;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 6px;
+}
+
+.small-tag {
+    background-color: var(--red);
+}
+
+.large-tag {
+    background-color: var(--green);
+}
+
+.add-wishlist {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: #fff;
+    padding: 6px 8px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/*------------------------------
+    product description section
+-------------------------------*/
+.brand {
+    font-size: 14px;
+    color: #555555;
+}
+
+.price {
+    font-size: 14px;
+}
+
+.discounted-price {
+    color: var(--red);
+    font-weight: bold;
+}
+
+.regular-price {
+    text-decoration: line-through;
+    color: #555555;
 }
 
 /* #endregion  */
