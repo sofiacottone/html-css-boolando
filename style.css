@@ -16,8 +16,15 @@ img {
     max-width: 100%;
 }
 
-/* #endregion  */
-/* #region DEBUG */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
 
 /* #endregion  */
 /* #region GENERAL */
@@ -37,16 +44,6 @@ body {
     display: flex;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-li {
-    list-style: none;
-    display: inline-block;
-}
-
 /* #endregion  */
 /* #region HEADER */
 header {
@@ -64,6 +61,10 @@ header {
 .header-box {
     justify-content: space-between;
     align-items: center;
+}
+
+.header-box li a:not(.header-box li a:first-child) {
+    padding-left: 8px;
 }
 
 .logo {
