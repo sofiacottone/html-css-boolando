@@ -18,13 +18,6 @@ img {
 
 /* #endregion  */
 /* #region DEBUG */
-/* .debug .row {
-    border: 1px solid;
-}
-
-.debug .col {
-    border: 1px solid red;
-} */
 
 /* #endregion  */
 /* #region GENERAL */
@@ -51,6 +44,7 @@ a {
 
 li {
     list-style: none;
+    display: inline-block;
 }
 
 /* #endregion  */
@@ -61,13 +55,15 @@ header {
     color: #fff;
     font-size: 14px;
     padding: 10px 0;
-    margin-bottom: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
 .header-box {
     justify-content: space-between;
     align-items: center;
-    display: fixed;
 }
 
 .logo {
@@ -79,13 +75,20 @@ header {
     max-width: 100%;
 }
 
+.header-user-actions {
+    padding-left: 80px;
+}
+
 .header-user-actions li {
-    display: inline-block;
     padding: 0 4px;
 }
 
 /* #endregion  */
 /* #region MAIN */
+main {
+    margin-top: 90px;
+}
+
 /*----------------------
     row + column setup
 -----------------------*/
@@ -98,6 +101,10 @@ header {
     width: calc(100% / 3);
     max-width: 396px;
     margin-right: 20px;
+}
+
+.row .col:last-child {
+    margin: 0;
 }
 
 .product-box {
@@ -185,6 +192,42 @@ header {
 .regular-price {
     text-decoration: line-through;
     color: #555555;
+}
+
+/* #endregion  */
+/* #region FOOTER */
+footer {
+    background-color: var(--black);
+    min-height: 50px;
+    margin-top: 40px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.f-box {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.credits,
+.social {
+    padding: 20px 0;
+}
+
+.social {
+    text-align: center;
+}
+
+.social-logos li {
+    padding: 8px 4px;
+}
+
+.legal-info li {
+    padding: 8px 8px 0 8px;
+}
+
+.legal-info li:first-child {
+    padding-left: 0;
 }
 
 /* #endregion  */
