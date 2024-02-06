@@ -121,7 +121,7 @@ main {
 }
 
 .card:hover .card-img-hover {
-    display: block;
+    display: inline-block;
 }
 
 .card:hover .card-img-default {
