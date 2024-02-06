@@ -162,9 +162,15 @@ header {
 /*------------------------------
     product description section
 -------------------------------*/
+.product-description {}
+
 .brand {
     font-size: 14px;
     color: #555555;
+}
+
+.p-description {
+    font-weight: bold;
 }
 
 .price {
