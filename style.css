@@ -1,0 +1,42 @@
+/* #region RESET */
+:root {
+    --orange: #ff6900;
+    --red: #ff0000;
+    --green: #008000;
+    --black: #1a1a1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #endregion  */
+/* #region GENERAL */
+body {
+    scroll-behavior: smooth;
+    font-family: "Cabin", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.flexbox {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+/* #endregion  */
