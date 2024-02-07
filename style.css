@@ -67,21 +67,19 @@ header {
     padding-left: 8px;
 }
 
-.logo {
-    max-width: 135px;
-    flex-grow: 1;
+header .logo img {
+    height: 30px;
+    margin-inline: auto;
 }
 
-.logo img {
-    max-width: 100%;
+.header-user-actions,
+.header-box nav {
+    width: 40%;
 }
 
-.header-user-actions {
-    padding-left: 80px;
-}
-
-.header-user-actions li {
-    padding: 0 4px;
+.header-user-actions ul {
+    justify-content: flex-end;
+    gap: 8px;
 }
 
 /* #endregion  */
@@ -96,16 +94,12 @@ main {
 .row {
     max-height: 630px;
     margin-bottom: 20px;
+    gap: 20px;
 }
 
 .col {
     width: calc(100% / 3);
     max-width: 396px;
-    margin-right: 20px;
-}
-
-.row .col:last-child {
-    margin: 0;
 }
 
 .product-box {
@@ -142,6 +136,7 @@ main {
 }
 
 .tags {
+    display: inline-block;
     max-width: fit-content;
     color: #fff;
     font-size: 12px;
@@ -170,8 +165,6 @@ main {
 /*------------------------------
     product description section
 -------------------------------*/
-.product-description {}
-
 .brand {
     font-size: 14px;
     color: #555555;
